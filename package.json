@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "2.2.2",
+    "@types/bcryptjs": "2.4.6",
     "@types/node": "^20.14.10",
     "eslint": "9.6.0",
     "nodemon": "^3.1.4",
@@ -24,6 +25,7 @@
   "dependencies": {
     "-": "0.0.1",
     "@prisma/client": "5.16.1",
+    "bcryptjs": "2.4.3",
     "D": "1.0.0",
     "dotenv": "16.4.5",
     "fastify": "^4.28.1",
