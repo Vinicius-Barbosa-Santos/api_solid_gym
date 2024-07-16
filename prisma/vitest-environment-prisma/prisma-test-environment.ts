@@ -1,7 +1,8 @@
 import { Environment } from "vitest";
 
-export default <Environment>(<unknown>{
+const prismaEnvironment: Environment = {
   name: "prisma",
+  transformMode: "ssr", // ou 'web', dependendo do seu caso
   async setup() {
     console.log("Setup");
 
@@ -11,4 +12,6 @@ export default <Environment>(<unknown>{
       },
     };
   },
-});
+};
+
+export default prismaEnvironment;
