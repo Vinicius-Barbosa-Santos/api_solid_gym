@@ -21,9 +21,12 @@ export async function create(request: FastifyRequest, reply: FastifyReply) {
 
   const checkInUseCase = makeCheckInUseCase();
 
+  const checkInRequest = request.user as { sub: string };
+  const checkInId = String(checkInRequest.sub); 
+
   await checkInUseCase.execute({
     gymId,
-    userId: request.user.sub,
+    userId: checkInId,
     userLatitude: latitude,
     userLongitude: longitude,
   });

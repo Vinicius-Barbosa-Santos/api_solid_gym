@@ -1,5 +1,5 @@
 import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-check-ins-repository";
-import { ResourceNotFoundError } from "@/use-cases/errors/resource-not-found-error";
+import { ResourceNotFoundError } from "../use-cases/errors/resource-not-found-error";
 import { expect, describe, it, beforeEach, afterEach, vi } from "vitest";
 import { ValidateCheckInUseCase } from "./validate-check-in";
 
