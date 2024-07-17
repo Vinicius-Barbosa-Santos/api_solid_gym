@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { prisma } from "../../lib/prisma";
 import { CheckInsRepository } from "@/repositories/check-ins-repository";
 import { CheckIn, Prisma } from "@prisma/client";
 import dayjs from "dayjs";
